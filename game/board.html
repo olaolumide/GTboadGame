@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content= "  ">
+	<meta name="Keywords" Content= "Game, Board, Board gme, Game of thrones, Online game " />
+	<meta name="viewport" content="width=device-width initial-scale=1" />
+	<meta http-equiv="X-UA-compatible" content="IE=edge" />
+	<title> Game of Thrones : Board Game </title>
+	<link rel="stylesheet" type="text/css" href="sass/boardGame.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<div id="menu" class="menu">
+		<img class="menu_logo" src="images/logoHierarchy.png" width="130" height="80" >
+		<ul class="menu_list" >
+			
+			<a href="index.html" > <li> Home </li> </a>
+			<a href="board.html" ><li> Players </li>  </a>
+			<a href="finale.html" ><li> Battle Ground </li>  </a>
+		</ul>
+	</div>
+	
+	<div id="leadContainer" >
+		<h1> HIERARCHY </h1>
+		<h2> Your Players </h2>	
+		
+		
+		<div class="interface" >
+			<div id="myPlayers" >  </div>
+		
+		</div>
+		<div class="actions">
+			
+			
+		</div>	
+		<!---<div class="arena">
+			
+			
+		</div>	--->
+		
+		<div class="enemy">
+			<a href="#" onclick="ControlRoom.setFight('CESSE')">
+				<img src=" " >
+				
+			</a>
+			
+			<a href="#" onclick="ControlRoom.setFight('JESSICA')">
+				<img src=" " >
+				
+			</a>
+			
+		</div>					
+		
+		<div class="enemy">
+			<a href="#" onclick="ControlRoom.setFight('CESSE')">
+				<img src=" " >
+				
+			</a>
+			
+			<a href="#" onclick="ControlRoom.setFight('JESSICA')">
+				<img src=" " >
+				
+			</a>
+			
+		</div>	
+		
+		
+		<div id="footer" >	
+		
+			<footer class="footer">
+				How to play the game
+			</footer>
+		</div>		
+		
+		
+	</div>		
+	
+	
+	<script src="boardGameJsFiles/controlRoom.js" > </script>
+	<script src="boardGameJsFiles/players.js" > </script>
+	<script src="boardGameJsFiles/boardPage.js" > </script>
+	<script src="boardGameJsFiles/finalePage.js" > </script>
+</body>
+</html>
