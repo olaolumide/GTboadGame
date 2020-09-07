@@ -1,0 +1,227 @@
+/*
+$condiment: "https://fonts.googleapis.com/css2?family=Condiment&display=swap";
+@if (global_variable_exists(fontLato)){
+	@import url($fontLato);
+}*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,700;1,700&display=swap");
+.navbar {
+  background-color: #007baa !important;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  font-family: Arial;
+  font-size: 30px;
+}
+.navbar-brand__logo {
+  width: 90px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+  color: #262525;
+  text-decoration: underline;
+}
+
+.navbar-collapse {
+  z-index: 1;
+}
+
+.carousel-item {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  marging-bottom: 25px;
+}
+
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#body {
+  font-family: "Roboto ", serif;
+  background-image: url("../Sass/images/bsParttern.png");
+  background-size: 5px;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+}
+
+.leadContainer {
+  flex: 1 0 auto;
+}
+.leadContainer h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin: 15px 0 25px 0;
+  letter-spacing: 1.8px;
+}
+.leadContainer h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 15px 0 25px 25px;
+  letter-spacing: 1.8px;
+}
+
+.carousel-inner {
+  max-height: 350px;
+}
+
+.selectCard {
+  color: white;
+  text-decoration: none;
+}
+
+.selectCard:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.character {
+  border-radius: 20px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto ", serif;
+  box-shadow: -0.3px 1px 2px 4px white;
+}
+
+.card-img-top {
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-img-top:hover .card-body {
+  width: 100%;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: auto;
+  position: relative;
+}
+
+.card-img-top:hover .toSelect {
+  transform: translateX(0);
+  transition: all 0.3s linear;
+}
+
+.card-img-top:hover .btn {
+  transform: translateX(0);
+  transition: all 0.3s linear;
+}
+
+.card-img-top .card-body:hover {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* This button select your players / Cards. */
+.character .toSelect, .btn {
+  border: none;
+  background-color: rbga(0, 0, 0, 0.5);
+  font-family: "Roboto ", serif;
+  transform: translateX(-270%);
+}
+
+/*This is the button that take you to Arena.*/
+#loadCharacters {
+  background-color: rgba(163, 80, 191, 0.5);
+  width: 100%;
+  visibility: hidden;
+  height: 91.32vw;
+  top: 36.5em;
+  left: 0;
+  position: absolute;
+}
+
+#loadCharacters .play {
+  width: 10rem;
+  margin: 48% auto;
+  box-shadow: -0.3px 1px 1.5px 3px #007baa;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-left: 40%;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.play:hover {
+  background-color: #262525;
+  color: #fff;
+}
+
+*, #boardBackground {
+  background-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chosenCharacter {
+  display: none;
+}
+
+#container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#container .canvas {
+  width: 98%;
+  margin: 50px 0 85px 10px;
+  box-shadow: -0.3px 1px 2px 4px black;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.chosenPlayer img {
+  display: none;
+}
+
+.chosenPlayer {
+  width: 50px;
+  background-color: grey;
+  box-shadow: -0.3px 1px 2px 4px black;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #262525;
+  margin-top: 25px;
+  font-size: 13px;
+  color: white;
+  padding: 7px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hove {
+  color: primary-color-hover;
+}
+
+/*# sourceMappingURL=boardGame.css.map */

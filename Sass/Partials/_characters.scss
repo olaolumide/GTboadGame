@@ -1,0 +1,131 @@
+$headLineFont: 'Roboto Slab', serif;
+$bodyFont: 'Roboto ', serif;
+$background-dark: rbga(0, 0, 0, 0.5);
+$background-color: #393939;
+$transition: all 0.3s linear;
+$menu-color: #262525;
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+#body{
+	font-family: $bodyFont;
+	background-image: url("../Sass/images/bsParttern.png");
+	background-size: 5px;
+	color: white;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: $headLineFont;
+	text-align: center;
+}
+.leadContainer {
+	flex: 1 0 auto;
+	
+	h1 {
+		font-family: $headLineFont;
+		font-size: 30px;
+		text-align: center;
+		font-weight: bold;
+		margin: 15px 0 25px 0;
+		letter-spacing: 1.8px;
+		
+	}
+	
+	h2 {
+		font-family: $headLineFont;
+		font-size: 25px;
+		//text-align: center;
+		font-weight: bold;
+		margin: 15px 0 25px 25px;
+		letter-spacing: 1.8px;
+	}
+}
+
+.carousel-inner{
+	max-height: 350px;
+}
+.selectCard{
+	color: white;
+	text-decoration: none;
+}
+.selectCard:hover{
+	color: white;
+	text-decoration: none;
+}
+.character { 
+	border-radius: 20px;
+	margin-bottom: 25px;		
+	display: flex;
+	flex-direction: column;
+	font-family: $bodyFont;
+	box-shadow: -0.3px 1px 2px 4px white;	
+}
+
+.card-img-top { 
+	border-radius: 20px ;		
+	background-size: cover;
+	background-position: center;	
+	background-repeat: no-repeat;
+}
+.card-img-top:hover .card-body{ 
+	width: 100%;	
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.3);
+	margin: auto;	
+	//transform: translateX(-200%);
+	position: relative;		
+}
+.card-img-top:hover .toSelect{
+	transform: translateX(0);
+	transition: all 0.3s linear;
+}
+.card-img-top:hover .btn{
+transform: translateX(0);
+	transition: all 0.3s linear;
+}
+
+
+.card-img-top .card-body:hover {
+	//background-color: rgba(163, 80, 191, 0.5);
+	width: 100%;
+	border-radius: 20px;	
+}
+
+/* This button select your players / Cards. */
+.character .toSelect, .btn{
+	border: none;	
+	background-color: $background-dark;
+	font-family: $bodyFont;
+	transform: translateX(-270%);
+}
+
+/*This is the button that take you to Arena.*/
+ #loadCharacters{
+	background-color: rgba(163, 80, 191, 0.5);
+	width: 100%;
+	visibility: hidden;
+	height: 91.32vw;
+	top: 36.5em;
+	left: 0;
+	position: absolute;	
+	
+}
+
+#loadCharacters .play{ width: 10rem;
+	margin: 48% auto ;
+	box-shadow: -0.3px 1px 1.5px 3px $primary-color; 
+	border-radius: 20px;
+	font-weight: bold;
+	margin-left: 40%;
+	color:#fff;
+	text-align: center;
+	font-size: 1rem;
+}
+.play:hover{
+	background-color: $menu-color;
+	color: #fff;
+}

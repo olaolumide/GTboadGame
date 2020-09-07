@@ -1,0 +1,22 @@
+$menu-color: #262525;
+$primary-color-hover: #f54b8d;
+
+
+footer{
+	display: flex;
+	justify-content: space-between;
+	background-color: $menu-color;
+	margin-top: 25px;
+	font-size: 13px;
+	color: white;	
+	padding: 7px;
+	
+}
+
+footer a{
+	color: white;
+		
+}
+footer a:hove {
+	color: primary-color-hover;
+}

@@ -1,0 +1,49 @@
+$primary-color: #007baa;
+$menu-color: #262525;
+$background-green: rbga(63, 191, 63, 0.5);
+
+.navbar {
+	background-color: ($primary-color) !important;
+	color: white;
+	text-transform: uppercase;
+}
+
+.navbar-brand { font-family: Arial;
+	font-size: 30px;
+	
+
+	&__logo{
+		width: 90px;
+	}		
+}
+	
+.navbar-dark .navbar-nav .nav-link{
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link{
+	color: $menu-color;
+	text-decoration: underline;
+}
+
+.navbar-collapse {
+	z-index: 1;
+}
+
+.carousel-item{
+	//background-side: cover;
+	//background-position: top center ;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	marging-bottom: 25px;
+}
+.carousel-indicators li{
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	margin: 0 5px;
+}
+
+
